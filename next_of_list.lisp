@@ -133,7 +133,7 @@
 
 
 ;; 無向グラフ
-(defun uedges->dot (edge)
+(defun uedges->dot (edges)
   (maplist (lambda (lst)
                    (mapc (lambda (edge)
                            (unless (assoc (car edge) (cdr lst))
